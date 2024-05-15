@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" id="salary">
+    <br>
+    <input type="button" onclick="calsalary()" value="Calculater Salary">
+    <br>
+    <p id="gs"></p>
+    <br>
+    <p id="ctc"></p>
+</body>
+<script>
+    function calsalary()
+    {
+        let salary = parseInt(document.getElementById('salary').value);
+        let gs = salary + 7000 + 3000 ;
+        document.getElementById('gs').innerHTML = 'Gross Salary :'+ gs;
+        let ctc = gs*12;
+        documnet.getElementById('ctc').innerHTML = 'ctc :'+ ans;
+    }
+</script>
+</html>
