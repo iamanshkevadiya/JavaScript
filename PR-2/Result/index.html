@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Result</title>
+    <script src="pr-2.js"></script>
+</head>
+<body>
+    <form class="form">
+        <table>
+            <tr>
+                <td><label for="name">Name:</label></td>
+                <td><input type="text" id="name"></td>
+            </tr>
+            <tr>
+                <td><label for="std">Standard:</label></td>
+                <td><input type="text" id="std"></td>
+            </tr>
+            <tr>
+                <td><label for="st">Stat :</label></td>
+                <td><input type="number" id="st"></td>
+            </tr>
+            <tr>
+                <td><label for="en">English:</label></td>
+                <td><input type="number" id="eng"></td>
+            </tr>
+            <tr>
+                <td><label for="ac">Account:</label></td>
+                <td><input type="number" id="ac"></td>
+            </tr>
+            <tr>
+                <td><label for="math">Mathematics:</label></td>
+                <td><input type="number" id="math"></td>
+            </tr>
+            <tr>
+                <td><label for="sci">Science :</label></td>
+                <td><input type="number" id="sci"></td>
+            </tr>
+        </table>
+        <input type="button" value="Calculate Grade" onclick="Grade()">
+    </form>
+
+    <p id="display"></p>
+    <p id="totalmark"></p>
+    <p id="per"></p>
+</body>
+</html>
