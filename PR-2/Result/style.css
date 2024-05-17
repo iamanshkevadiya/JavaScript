@@ -1,0 +1,70 @@
+*{
+	margin:0;
+	padding:0;
+	box-sizing:border-box;
+}
+table {
+    margin: 0 auto;
+    /* padding-top: 20px; */
+}
+table tr td{
+    color: white;
+}
+.form .button{
+    margin-left: 42.5%;
+    margin-top: 20px;
+    background-color: azure;
+    border: 1px solid black;
+    padding: 5px;
+    border-radius: 5px;
+    font-size: 14px;
+    font-weight: 500;
+}
+.form table tr td label{
+    color: white;
+}
+.button:hover{
+    background-color:darkcyan;
+    color: white;
+}
+.form table tr td{
+    padding: 5px 0px;
+}
+table tr td{
+    padding: 5px;
+}
+table{
+    margin-top: 20px;
+}
+
+.bg-box{
+	width:700px;
+	height:500px;
+	border:1px solid white;
+	border-radius:20px;
+	position:relative;
+	backdrop-filter: blur(10px);
+}
+
+.bg{
+	background-image:url(./bg.jpg);
+	background-repeat:no-repeat;
+	background-size: cover;
+	background-position:center;
+	justify-content:center;
+	align-items:center;
+	display:flex;
+	flex-wrap:wrap;
+	height:100vh;
+	width:100%;
+}
+
+#nam,#standard,#totalmark,#per,#display{
+    color: white;
+    text-align: center;
+    padding-top: 10px;
+    font-size: 18px;
+}
+#nam{
+    padding-top: 40px;
+}

@@ -12,40 +12,49 @@ function Grade()
     let percentage = (totalmark/500)*100;
 
     let grade;
-    let msg;
     if(percentage>=90)
         {
-            msg="Congratulations You got A1 grade..";
+            grade="Congratulations You got A1 grade..";
         }
     else if(percentage>=80)
         {
-            msg="Congratulations You got A grade..";
+            grade="Congratulations You got A grade..";
         }
     else if(percentage>=70)
         {
-            msg="You got B1 grade..";
+            grade="You got B1 grade..";
         }
     else if(percentage>=60)
         {
-            msg="You got B grade..";
+            grade="You got B grade..";
         }
     else if(percentage>=50)
         {
-            msg="You got C grade..";
+            grade="You got C grade..";
         }
     else if(percentage>=40)
         {
-            msg="You got C1 grade..";
+            grade="You got C1 grade..";
         }
     else
         {
-            msg="Failed";
+            grade="Failed";
         }
 
-    document.getElementById('display').innerHTML = msg;
+        // var table = "<table border='3'>";
+        // table += "<tr><td>Name:</td><td>" + name + "</td></tr>";
+        // table += "<tr><td>Standard:</td><td>" + std + "</td></tr>";
+        // table += "<tr><td>Total Marks:</td><td>" + totalmark + "</td></tr>";
+        // table += "<tr><td>Percentage:</td><td>" + percentage+ "%</td></tr>";
+        // table += "<tr><td>Grade:</td><td>" + grade + "</td></tr>";
+        // table += "</table>";
     
-    document.getElementById('name').innerHTML = "Name :"+name;
-    document.getElementById('std').innerHTML = "Standard :"+std;
-    document.getElementById('totalmark').innerHTML = "Totalmarks :"+totalmark;
-    document.getElementById('per').innerHTML = "percentage :"+percentage + '%';
+        // document.getElementById("display").innerHTML = table;
+
+        
+        document.getElementById('nam').innerHTML = "Name :"+name;
+        document.getElementById('standard').innerHTML = "Standard :"+std;
+        document.getElementById('totalmark').innerHTML = "Totalmarks :"+totalmark;
+        document.getElementById('per').innerHTML = "percentage :"+percentage + '%';
+        document.getElementById('display').innerHTML = grade;
 }

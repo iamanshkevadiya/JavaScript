@@ -4,10 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Result</title>
+    <link rel="stylesheet" href="style.css">
     <script src="pr-2.js"></script>
 </head>
 <body>
-    <form class="form">
+<div class="bg">
+    <form class="form bg-box">
         <table>
             <tr>
                 <td><label for="name">Name:</label></td>
@@ -38,11 +40,13 @@
                 <td><input type="number" id="sci"></td>
             </tr>
         </table>
-        <input type="button" value="Calculate Grade" onclick="Grade()">
+        <input type="button" class="button" value="Calculate Grade" onclick="Grade()">
+        <div id="nam"></div>
+        <div id="standard"></div>
+        <div id="totalmark"></div>
+        <div id="per"></div>
+        <div id="display"></div>
     </form>
-
-    <p id="display"></p>
-    <p id="totalmark"></p>
-    <p id="per"></p>
+</div>
 </body>
 </html>
