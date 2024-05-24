@@ -9,9 +9,9 @@ function bmicalculater(heightInput,weightInput){
     
     let BMI, height, weight,msg;
 
-    height = heightInput.value;
-    weight = weightInput.value;
-    BMI = weight / height ** 2;
+    height = heightInput;
+    weight = weightInput;
+    BMI = weight / (height * height);
 
     
     if (BMI < 18.5) 
