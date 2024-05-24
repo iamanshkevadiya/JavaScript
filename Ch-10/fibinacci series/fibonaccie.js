@@ -1,13 +1,15 @@
 function fibona(){
     let n = parseInt(document.getElementById("num").value);
-    let ans = fibonacci(n);
-    document.getElementById("dis").innerHTML =  ans;
+    fibonacci(n, 0, 1);
+    document.getElementById("dis").innerHTML +=  "0" + "1";
 }
-function fibonacci(n){
-        if (n <= 1) {
-            return n;
+function fibonacci(n,n1,n2){
+    let n3 = n1 + n2;
+    document.getElementById('dis').innerHTML += n3 + " ";
+    n1 = n2;
+    n2 = n3;
+    n--;
+        if (n >= 1) {
+            fibonacci(n, n1, n2);
         } 
-        else {
-            return fibonacci(n - 2) + fibonacci(n - 1);
-        }
 }
