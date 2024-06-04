@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Emoloyee Data</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+</head>
+<style>
+    #btna td input{
+        width:50%;
+    }
+</style>
+<body>
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Employe Name</th>
+                <td><input type="text" id="Ename"></td>
+            </tr>
+            <tr>
+                <th>Emoloye ID</th>
+                <td><input type="number" id="id"></td>
+            </tr>
+            <tr>
+                <th>Salary</th>
+                <td><input type="number" id="salary"></td>
+            </tr>
+            <tr id="btna">
+                <td colspan="2"><input type="button" value="Add" onclick="AddRow()" id="btn"></td>
+            </tr>
+        </thead >
+    </table>
+    
+    <table border="3" id="show" class="table">
+        <thead>
+            <tr>
+                <th>Employe Name</th>
+                <th>Emoloye ID</th>
+                <th>Salary</th>
+            </tr>
+        </thead>
+    </table>
+</body>
+<script src="12-2.js"></script>
+<script src="js/bootstrap.bundle.min.js"></script>
+</html>
