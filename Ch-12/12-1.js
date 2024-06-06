@@ -1,10 +1,10 @@
-let myItems = Array();
+let myitem=Array();
 
 function addItem() {
     let val = document.getElementById('inp-item').value;
 
-    myItems.push(val);
-
+    myitem.push(val);
+    console.log(myitem);
     let table = document.getElementById("table");
     let tr = document.createElement("tr");
     let td = document.createElement("td");
@@ -15,18 +15,24 @@ function addItem() {
 
 }
 
-function remItem(button){
-    let val2 = document.getElementById('rem-item').value;
+function removeItems(){
+    let val1= document.getElementById('rem-item').value;  
+    let row = document.getElementById(val1);
+    row.remove();
+}
 
-    delete myItems[val2];
+function updateItem()
+{
+    let oldVal = document.getElementById('old-item').value;
+    let newVal = document.getElementById('new-item').value;
 
-    // let table = document.getElementById("table");
-    // let tr = document.removeChild("tr")
-    // let td = document.removeChild("td");
+    
+    let row = document.getElementById(oldVal);
+    row.id = newVal;
+    
+    let td = document.getElementById("td" + oldVal);
+    
+    td.innerHTML = newVal;
+    td.id = "td" + newVal;
 
-    // td.innerHTML = val2;
-    // tr.append(td);
-    // table.append(tr);
-
-    console.log(myItems);
 }

@@ -1,0 +1,25 @@
+table {
+    width: 25%;
+    text-align: center;
+    margin-top: 50px;
+}
+table tr th{
+    font-size: 22px;
+}
+table tr td{
+    font-size: 18px;
+}
+
+input {
+    width: 20%;
+    height: 20px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+input.btn{
+    width: 5%;
+    height: 25px;
+    border: 1px solid black;
+    border-radius: 5px;
+    outline: none;
+}
