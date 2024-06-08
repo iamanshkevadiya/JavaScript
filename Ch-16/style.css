@@ -1,0 +1,25 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+.container{
+    max-width: 1140px;
+    margin: 0 auto;
+    height: 100vh;
+    
+}
+ul{
+    align-items: center;
+    justify-content: center;
+}
+p{
+    display: inline-block;
+    padding-left: 10px;
+    padding-bottom: 10px;
+    font-size: 19px;
+}
+h3{
+    padding-bottom: 20px;
+    font-size: 22px;
+}

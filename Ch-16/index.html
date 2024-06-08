@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h3 id="question"></h3>
+        <ul>
+            <div id="box">
+                <input type="checkbox" name="" id="option"/><p id="option1"></p>
+            </div>
+            <div class="box">
+                <input type="checkbox" name="" id="option"/><p id="option2"></p>
+            </div>
+            <div class="box">
+                <input type="checkbox" name="" id="option"/><p id="option3"></p>
+            </div>
+            <div class="box">
+                <input type="checkbox" name="" id="option"/><p id="option4"></p>
+            </div>
+        </ul>
+        <input type="button" value="result" onclick="checkAnswer()">
+    </div>
+</body>
+<script src="quiz.js"></script>
+</html>
