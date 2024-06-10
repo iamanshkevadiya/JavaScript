@@ -1,20 +1,58 @@
-var question1 = {
-    question: "What is the capital of Australia?",
-    options: ["Sydney", "Melbourne", "Canberra", "Perth"],
-    answer: "Canberra"
-};
-
-document.getElementById("question").innerHTML = question1.question;
-document.getElementById("option1").innerHTML = question1.options[0];
-document.getElementById("option2").innerHTML = question1.options[1];
-document.getElementById("option3").innerHTML = question1.options[2];
-document.getElementById("option4").innerHTML = question1.options[3];
-
-function checkAnswer(userAnswer) {
-    if (userAnswer === question1.answer) {
-        alert("Correct!");
-    } else {
-        alert("Sorry, that's not correct.");
+const quizData = [
+    {
+      question: "What is the capital of France?",
+      options: ["Paris", "Madrid", "Rome", "Berlin"],
+      answer: "Paris"
+    },
+    {
+      question: "What is the largest planet in our solar system?",
+      options: ["Jupiter", "Saturn", "Mars", "Earth"],
+      answer: "Jupiter"
+    },
+  ];
+  
+  const questionElement = document.getElementById("question");
+  const optionsElement = document.getElementById("options");
+  const submitButton = document.getElementById("submit");
+  
+  let currentQuestion = 0;
+  let score = 0;
+  
+  function showQuestion() {
+    const question = quizData[currentQuestion];
+    questionElement.innerText = question.question;
+  
+    optionsElement.innerHTML = "";
+    question.options.forEach(option => {
+      const button = document.createElement("button");
+      button.innerText = option;
+      optionsElement.appendChild(button);
+      button.addEventListener("click", selectAnswer);
+    });
+  }
+  
+  function selectAnswer(e) {
+    const selectedButton = e.target;
+    const answer = quizData[currentQuestion].answer;
+  
+    if (selectedButton.innerText === answer) {
+      score++;
     }
-    question1();
-}
+  
+    currentQuestion++;
+  
+    if (currentQuestion < quizData.length) {
+      showQuestion();
+    } else {
+      showResult();
+    }
+  }
+  
+  function showResult() {
+    quiz.innerHTML = `
+      <h1>Quiz Completed!</h1>
+      <p>Your score: ${score}/${quizData.length}</p>
+    `;
+  }
+  
+  showQuestion();
