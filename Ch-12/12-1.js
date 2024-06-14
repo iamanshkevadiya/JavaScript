@@ -9,9 +9,11 @@ function addItem() {
     let tr = document.createElement("tr");
     let td = document.createElement("td");
 
-    td.innerHTML = val;
+    td.id="td" + val;
+    td.innerHTML=val;
     tr.append(td);
     table.append(tr);
+    tr.id = val;
 
 }
 
@@ -24,15 +26,15 @@ function removeItems(){
 function updateItem()
 {
     let oldVal = document.getElementById('old-item').value;
-    let newVal = document.getElementById('new-item').value;
+    let newval = document.getElementById('new-item').value;
 
     
     let row = document.getElementById(oldVal);
-    row.id = newVal;
+    row.id = newval;
     
     let td = document.getElementById("td" + oldVal);
     
-    td.innerHTML = newVal;
-    td.id = "td" + newVal;
+    td.innerHTML = newval;
+    td.id = "td" + newval;
 
 }
