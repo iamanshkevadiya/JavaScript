@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add, Update & Delete </title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css.map">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <form action="">
+        <input type="text" id="inp-name" placeholder="Enter Name">
+        <br>
+        <input type="text" id="inp-id" placeholder="Enter ID">
+        <br>
+        <input type="text" id="inp-age" placeholder="Enter Age">
+        <br>
+        <input type="button" class="btn btn btn-outline-success" value="SUBMIT" id="change_name" onclick="alldata()">
+    </form>
+    <table class="table table-success table-striped" id="data-table">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Name</th>
+                <th>Age</th>
+                <th colspan="2">Delete And update</th>
+            </tr>
+        </thead>
+        <tbody id="data-body"></tbody>
+    </table>
+</body>
+<script src="22-2.js"></script>
+<script src="js/bootstrap.bundle.min.js"></script>
+<script src="js/bootstrap.bundle.min.js.map"></script>
+
+</html>

@@ -1,0 +1,10 @@
+form{
+    padding: 20px;
+}
+input[type="text"]{
+    margin-bottom: 10px;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid black;
+    padding: 3px 8px;
+}
