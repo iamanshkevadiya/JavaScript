@@ -1,34 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>E Commerce</title>
-    <!-- Login Form link -->
+    <title>Document</title>
     <link rel="stylesheet" href="css/style.css">
-    <script src="login.js"></script>
 </head>
+
 <body>
-    <body>
-        <section class="container">
-            <div class="login-container">
-                <div class="circle circle-one"></div>
-                <div class="form-container">
-                    <img src="https://raw.githubusercontent.com/hicodersofficial/glassmorphism-login-form/master/assets/illustration.png" alt="illustration" class="illustration" />
-                    <h1 class="opacity">LOGIN</h1>
-                    <form>
-                        <input type="email" placeholder="USERNAME" id="login-email"/>
-                        <input type="password" placeholder="PASSWORD" id="login-pass"/>
-                        <button id="btn" onclick="login()">Login</button>
-                    </form>
-                    <div class="register-forget">
-                        <p>Don't have an account?<a href="signup.html">Sign UP</a></p>
-                    </div>
-                </div>
-                <div class="circle circle-two"></div>
-            </div>
-            <div class="theme-btn-container"></div>
-        </section>
-    </body>
+    <div class="background">
+        <div class="shape"></div>
+        <div class="shape"></div>
+    </div>
+    <form>
+        <h2>Login</h2>
+        <label>Email</label>
+        <input type="E-mail" placeholder="Enter emai Id" id="email" />
+        <label>Password</label>
+        <input type="password" placeholder="Enter Password" id="pass" />
+        <button onclick="login()">Login</button>
+        <a href="signup.html">Sign Up</a>
+    </form>
 </body>
+<script src="js/login.js"></script>
+
 </html>

@@ -1,35 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>E Commerce</title>
-    <!-- Login Form link -->
+    <title>Document</title>
     <link rel="stylesheet" href="css/style.css">
-    <script src="signup.js"></script>
 </head>
+
 <body>
-    <body>
-        <section class="container">
-            <div class="login-container">
-                <div class="circle circle-one"></div>
-                <div class="form-container">
-                    <img src="https://raw.githubusercontent.com/hicodersofficial/glassmorphism-login-form/master/assets/illustration.png" alt="illustration" class="illustration" />
-                    <h1 class="opacity">Sign Up</h1>
-                    <form>
-                        <input type="email" placeholder="USERNAME" id="email"/>
-                        <input type="password" placeholder="PASSWORD" id="pass"/>
-                        <input type="password" placeholder="CONFIRM PASSWORD" id="com-pass"/>
-                        <button id="btn" onclick="signUp()">Sign Up</button>
-                    </form>
-                    <div class="register-forget">
-                        <p>Already have an account?<a href="login.html">Login</a></p>
-                    </div>
-                </div>
-                <div class="circle circle-two"></div>
-            </div>
-            <div class="theme-btn-container"></div>
-        </section>
-    </body>
+    <div class="background">
+        <div class="shape"></div>
+        <div class="shape"></div>
+    </div>
+    <form>
+        <h2>Sign up </h2>
+        <label>Email</label>
+        <input type="E-mail" placeholder="Enter emai Id" id="email" />
+        <label>Password</label>
+        <input type="password" placeholder="Enter Password" id="pass" />
+        <label>Confrim Password</label>
+        <input type="password" placeholder="Enter Password" id="com_pass" />
+        <button onclick="sign()">Sign up</button>
+        <a href="login.html">Log in</a>
+    </form>
 </body>
+<script src="js/sign.js"></script>
+
 </html>
