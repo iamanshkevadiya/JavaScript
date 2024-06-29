@@ -6,10 +6,12 @@ function sign() {
     window.localStorage.setItem("inp_email", email);
 
     if (email == "" && pass == "") {
-        alert("Please Enter a Email first..!");
+        alert("Please Enter Email and Password first..!");
         return;
     }
-    
+    else if(email == "") {
+        alert("Please Enter Email First..!");
+    }
     if (pass == conform) {
         window.localStorage.setItem("inp_pass", pass);
         window.localStorage.setItem("conf1", conform);

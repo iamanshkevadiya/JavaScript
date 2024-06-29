@@ -26,7 +26,6 @@
 .swiper-button-next {
     color: black;
 }
-
 .navbar a img {
     align-items: center;
     width: 100%;
@@ -38,11 +37,12 @@
 }
 .navbar-collapse ul li{
     font-weight: 600;
-    padding-right: 10px;
+    font-size: 18px;
+    margin-right: 18px;
 }
 .navbar-collapse ul li a img{
     width: 100%;
-    width: 18px;
+    height: 25px;
 }
 .navbar-collapse {
     flex-grow: 0;
@@ -83,4 +83,32 @@ button{
 .card-body{
     border-radius: 10px;
     height: 520px;
+}
+
+/* Cart Page */
+.offcanvas{
+    width: 500px !important;
+    background-color:beige;
+}
+.cart-body{
+    height: 150px;
+    display: flex;
+}
+.cart-img-top img{
+    width: 50%;
+    height: 50px;
+}
+.cart-title{
+    font-size: 18px;
+    margin-left: 20px;
+    align-items: center;
+    display: flex;
+    width: 100px;
+}
+.cart-price{
+    font-size: 15px;
+    margin-left: 20px;
+    align-items: center;
+    display: flex;
+    font-weight: 700;
 }

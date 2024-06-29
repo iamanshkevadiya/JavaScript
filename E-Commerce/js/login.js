@@ -7,12 +7,11 @@ function login() {
 
     if (email == inp_email && pass == inp_pass) {
         window.location.href = "home.html";
-
-    }
-    else if (pass !== inp_pass){
+    } 
+    else if(pass !== inp_pass) {
         alert("Password Not Match..!");
     }
-    else if (email !== inp_email){
+    else if(email !== inp_email) {
         alert("Email Not Match..!");
     }
     else {
